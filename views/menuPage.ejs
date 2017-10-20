@@ -1,0 +1,37 @@
+<% include partials/header %>
+    
+<div class="jumbotron">
+    <div class = "container-fluid">
+        <h1>Restaurant Name</h1>
+        <p>Great food and stuff</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row ordering-sites">
+        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/ubereats.png?944713018036056175"></div>
+        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/grubhub.png?944713018036056175"></div>
+        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/doordash.png?944713018036056175"></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12 menu-title">
+            <h2>Lunch & Dinner Menu</h2>
+            <p>100% free of gluten, dairy, corn, soy, peanuts, refined sugar & seed oils.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+        <% items.forEach(function(item){ %>
+            <div class="col-md-3 col-sm-6 entrees">
+                <div class="caption">
+                    <h4> <%= item.name %> </h4>
+                </div>
+                <div class="thumbnail">
+                    <img src=" <%= item.image %>" class="img-thumbnail">
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<% include partials/footer %>
