@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/Ablakes/restaurant/issues"
   },
-  "homepage": "https://github.com/Ablakes/restaurant#readme"
+  "homepage": "https://github.com/Ablakes/restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.3"
+  }
 }
