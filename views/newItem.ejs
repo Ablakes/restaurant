@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+    <div class="container">
+        <h1 style="text-align:center; margin: 25px;">Create a New Item</h1>
+        <div style="width: 300px; margin: 0 auto;">
+            <form action="/items" method="POST" >
+                <div class="form-group">
+                    <input type="text" class="form-control" name="item[name]" placeholder="Item Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="item[image]" placeholder="Image URL">
+                </div>
+                <div class="form-group">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="item[nutrition]" placeholder="Nutrition URL">
+                </div>
+                <div class="form-group">
+                <div class="form-group">
+                    <textarea class="form-control" rows="6" name="item[description]" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary form-control" href="/items">
+                </div>
+            </form>
+            <a href="/">Go Back</a>
+        </div> 
+    </div>
+    
+<% include partials/footer %>

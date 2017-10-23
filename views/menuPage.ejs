@@ -23,15 +23,46 @@
     <div class="row text-center" style="display: flex; flex-wrap: wrap;">
         <% items.forEach(function(item){ %>
             <div class="col-md-3 col-sm-6 entrees">
-                <div class="caption">
-                    <h4> <%= item.name %> </h4>
-                </div>
-                <div class="thumbnail">
+                <div class="container-fluid display-item">
+                    <div class="caption">
+                        <h4> <%= item.name %> </h4>
+                    </div>
                     <img src=" <%= item.image %>" class="img-thumbnail">
+                    <a class="btn btn-primary" href="/items/<%= item._id %>">View</a>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                      Launch demo modal
+                    </button>
                 </div>
             </div>
         <% }); %>
     </div>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <img src=" <%= item.image %>">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <% include partials/footer %>
