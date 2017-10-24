@@ -1,0 +1,64 @@
+<% include partials/header %>
+
+<% function makeItemThumbnails(){%>
+  <% for(var i = 0; i<items.length; i++){ %>
+    <div class="col-md-3 col-sm-6 entrees">
+        <div class="container-fluid display-item">
+            <div class="caption">
+                <h4> <%= items[i].name %> </h4>
+            </div>
+            <img src=" <%= items[i].image %>" class="img-thumbnail">
+            <a class="btn btn-primary" href="/items/<%= items[i]._id %>">View</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              Launch demo modal
+            </button>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="<%= items[i].image %>">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <% }%>
+<% } %>
+    
+<div class="jumbotron">
+    <div class = "container-fluid">
+        <h1>Restaurant Name</h1>
+        <p>Great food and stuff</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row ordering-sites">
+        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/ubereats.png?944713018036056175"></div>
+        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/grubhub.png?944713018036056175"></div>
+        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/doordash.png?944713018036056175"></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-12 menu-title">
+            <h2>Lunch & Dinner Menu</h2>
+            <p>100% free of gluten, dairy, corn, soy, peanuts, refined sugar & seed oils.</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+        <% makeItemThumbnails(); %>
+    </div>
+</div>
+
+<% include partials/footer %>
