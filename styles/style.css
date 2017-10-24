@@ -28,10 +28,14 @@ body{
 .jumbotron {
     background: url(https://photos-5.dropbox.com/t/2/AACUR2PO2L9scbpQjrlxW86bG2KjlKY25CErZd4GmSeOKw/12/611940663/jpeg/32x32/1/_/1/2/02_22_2017_Mealmade-039-Edit.jpg/EKKmiKUFGDQgBygH/Y6S4JftJV8hgRSenClsqBvsNUdszsTf8P-bM-Z5hU9I%2CwuyP8CSnRxFIE4kUvtIHNrweuGv3GK1AalVIsdr-KUI?size=1600x1200&size_mode=3) no-repeat center center fixed;
     color: white;
-    text-shadow: 2px 2px 2px black;
-    min-height: 90vh;
+    text-shadow: 1px 2px 2px black;
+    min-height: 92vh;
     display: flex;
     align-items: center;
+}
+
+.navbar {
+    min-height: 8vh;
 }
 
 .display-item {
@@ -61,8 +65,28 @@ body{
 
 .navbar-inverse {
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.container.collapsed{
+    display: block;
 }
 
 .navbar-link {
-    color: #FFF8DD !important;
+    color: rgba(255, 255, 255, .95) !important;
+}
+
+.navbar-btn {
+    background-color: #7FAD55;
+    border-color: #7FAD55;
+    color: #FFF8DD;
+}
+
+#top-logo-img {
+    margin-top: -3px;
+    height: 25px;
+    text-shadow: 2px 2px 2px white;
+    /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
+    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1));
 }
