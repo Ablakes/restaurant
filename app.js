@@ -40,7 +40,7 @@ app.get("/items", function(req, res){
         if(err){
             console.log(err);
         }else{
-            res.render("menuPage", {items: allItems});
+            res.render("index", {items: allItems});
         }
     });
 });
