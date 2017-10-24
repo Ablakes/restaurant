@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Restaurant</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-inverse">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -17,7 +19,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">Restaurant</a>
+              <a class="navbar-brand navbar-link" href="/">Restaurant</a>
             </div>
         
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -25,10 +27,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://www.kitava.com/pages/about">About</a></li>
-                <li><a href="/items/new">New</a></li>
- <!--Learn how to make this scroll down to the menu--> <li><a href="/items">Menu</a></li>          
-                <li><a href="https://www.kitava.com/account/login">My Account</a></li>
+                <li><a href="https://www.kitava.com/pages/about" class="navbar-link">About</a></li>
+                <li><a href="/items/new" class="navbar-link">New</a></li>
+ <!--Learn how to make this scroll down to the menu--> <li><a href="/items" class="navbar-link">Menu</a></li>          
+                <li class="navbar-link"><a href="https://www.kitava.com/account/login" class="navbar-link">My Account</a></li>
                 <a href="https://www.grubhub.com/restaurant/kitava-formerly-mealmade-2011-mission-st-san-francisco/354238"><button type="button" class="btn btn-default navbar-btn">Order Now!</button></a>
               </ul>
             </div><!-- /.navbar-collapse -->

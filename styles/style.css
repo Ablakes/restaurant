@@ -1,3 +1,8 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
 .navbar-default{
     margin: 0;
 }
@@ -24,7 +29,7 @@
     background: url(https://photos-5.dropbox.com/t/2/AACUR2PO2L9scbpQjrlxW86bG2KjlKY25CErZd4GmSeOKw/12/611940663/jpeg/32x32/1/_/1/2/02_22_2017_Mealmade-039-Edit.jpg/EKKmiKUFGDQgBygH/Y6S4JftJV8hgRSenClsqBvsNUdszsTf8P-bM-Z5hU9I%2CwuyP8CSnRxFIE4kUvtIHNrweuGv3GK1AalVIsdr-KUI?size=1600x1200&size_mode=3) no-repeat center center fixed;
     color: white;
     text-shadow: 2px 2px 2px black;
-    min-height: 520px;
+    min-height: 90vh;
     display: flex;
     align-items: center;
 }
@@ -32,4 +37,32 @@
 .display-item {
     box-shadow: 1px 1px 5px grey;
     margin-bottom: 5px;
+}
+
+.modal-dialog {
+    min-width: 80%;
+}
+
+.modal-images {
+    width: 100%;
+}
+
+.modal-body {
+    height: 600px;
+}
+
+.entrees {
+    margin-bottom: 25px;
+}
+
+.view-button {
+    margin: 5px 0 5px 0;
+}
+
+.navbar-inverse {
+    margin-bottom: 0;
+}
+
+.navbar-link {
+    color: #FFF8DD !important;
 }
