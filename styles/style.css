@@ -26,7 +26,9 @@ body{
 }
 
 .jumbotron {
-    background: url(https://photos-5.dropbox.com/t/2/AACUR2PO2L9scbpQjrlxW86bG2KjlKY25CErZd4GmSeOKw/12/611940663/jpeg/32x32/1/_/1/2/02_22_2017_Mealmade-039-Edit.jpg/EKKmiKUFGDQgBygH/Y6S4JftJV8hgRSenClsqBvsNUdszsTf8P-bM-Z5hU9I%2CwuyP8CSnRxFIE4kUvtIHNrweuGv3GK1AalVIsdr-KUI?size=1600x1200&size_mode=3) no-repeat center center fixed;
+     /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
+    background: url("background-image-cropped.jpg") no-repeat center center fixed;
+    background-size: cover;
     color: white;
     text-shadow: 1px 2px 2px black;
     min-height: 92vh;
