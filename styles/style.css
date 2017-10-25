@@ -1,6 +1,7 @@
 body{
     height: 100%;
     width: 100%;
+    background-color: #222222;
 }
 
 .navbar-default{
@@ -37,7 +38,15 @@ body{
     min-height: 92vh;
     display: flex;
     align-items: center;
-    z-index: 2;
+}
+
+#uber-eats-logo {
+    margin-top: 14px;
+    height: 32px;
+}
+
+.jumbotron h1 {
+    font-size: 6em;
 }
 
 .navbar {
