@@ -26,18 +26,23 @@ body{
 }
 
 .jumbotron {
-     /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
+    /*Need to optimize background image for speed*/
+    /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
     background: url("background-image-cropped.jpg") no-repeat center center fixed;
     background-size: cover;
+    box-shadow: 0px 0px 50px #222222 inset,
+                0px 0px 10px #222222 inset;
     color: white;
     text-shadow: 1px 2px 2px black;
     min-height: 92vh;
     display: flex;
     align-items: center;
+    z-index: 2;
 }
 
 .navbar {
     min-height: 8vh;
+    border-radius: 0;
 }
 
 .display-item {
@@ -83,12 +88,14 @@ body{
     background-color: #7FAD55;
     border-color: #7FAD55;
     color: #FFF8DD;
+    border-radius: 0;
 }
 
 #top-logo-img {
     margin-top: -3px;
     height: 25px;
     text-shadow: 2px 2px 2px white;
-    /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
-    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1));
+    -webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));
+    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));
 }
+
