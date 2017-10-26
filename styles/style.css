@@ -78,10 +78,6 @@ body{
     margin: 0;
 }
 
-#banner-text-container {
-    margin-top: -10%;
-}
-
  /*BODY ITEMS*/
  
 .ordering-sites {
@@ -127,3 +123,17 @@ body{
 .modal-body {
     height: 600px;
 }
+
+
+/*THINGS TO DO FOR MOBILE*/
+
+/*Do something like this to raise the banner text*/
+/*#banner-text-container {*/
+/*    margin-top: -10%;*/
+/*}*/
+
+/*Undo this so that you can move the hamburger to the right:*/
+/*.navbar-inverse {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
