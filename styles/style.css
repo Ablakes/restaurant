@@ -1,24 +1,12 @@
 body{
     height: 100%;
     width: 100%;
-    background-color: #222222;
 }
 
-.navbar-default{
-    margin: 0;
-}
-.jumbotron {
-    text-align: center;
-    margin: 0;
-}
+/*NAVBAR*/
 
 .collapsed {
     text-align: center;
-}
-
-.ordering-sites {
-    text-align: center;
-    padding: 30px;
 }
 
 .menu-title {
@@ -26,54 +14,20 @@ body{
     padding-top: 0;
 }
 
-.jumbotron {
-    /*Need to optimize background image for speed*/
-    /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
-    background: url("background-image-cropped.jpg") no-repeat center center fixed;
-    background-size: cover;
-    box-shadow: 0px 0px 50px black inset,
-                0px 0px 10px #222222 inset;
-    color: white;
-    text-shadow: 1px 2px 2px black;
-    min-height: 92vh;
-    display: flex;
-    align-items: center;
-}
-
-#uber-eats-logo {
-    margin-top: 14px;
-    height: 32px;
-}
-
-.jumbotron h1 {
-    font-size: 6em;
-}
-
 .navbar {
-    min-height: 8vh;
+    min-height: 9vh;
     border-radius: 0;
     border: 0;
 }
 
-.display-item {
-    box-shadow: 1px 1px 5px grey;
-    margin-bottom: 5px;
+.navbar li {
+    font-size: 130%;
+    margin-top: 4px;
+    font-family: 'Lato', sans-serif !important;
 }
 
-.modal-dialog {
-    min-width: 80%;
-}
-
-.modal-images {
-    width: 100%;
-}
-
-.modal-body {
-    height: 600px;
-}
-
-.entrees {
-    margin-bottom: 25px;
+.navbar-btn {
+    margin-top: 10px;  
 }
 
 .view-button {
@@ -86,10 +40,6 @@ body{
     align-items: center;
 }
 
-.container.collapsed{
-    display: block;
-}
-
 .navbar-link {
     color: rgba(255, 255, 255, .95) !important;
 }
@@ -98,14 +48,82 @@ body{
     background-color: #7FAD55;
     border-color: #7FAD55;
     color: #FFF8DD;
-    border-radius: 0;
 }
 
 #top-logo-img {
-    margin-top: -3px;
-    height: 25px;
+    height: 130%;
     text-shadow: 2px 2px 2px white;
     -webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));
     filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));
 }
 
+ /*MAIN BANNER*/
+ 
+.jumbotron {
+    /*Need to optimize background image for speed*/
+    /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
+    background: url("background-image-cropped.jpg") no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: 0px 0px 50px black inset,
+                0px 0px 10px #222222 inset;
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+    		     0px 8px 13px rgba(0,0,0,.4),
+    		     0px 8px 23px rgba(0,0,0,0.2),
+    		     1px 2px 2px rgba(0,0,0,0.8);
+    min-height: 91vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+#banner-text-container {
+    margin-top: -10%;
+}
+
+ /*BODY ITEMS*/
+ 
+.ordering-sites {
+    text-align: center;
+    padding: 30px;
+}
+
+#uber-eats-logo {
+    margin-top: 14px;
+    height: 32px;
+}
+
+.item-containers {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.display-item {
+    /*box-shadow: 1px 1px 5px grey;*/
+    margin-bottom: 5px;
+}
+
+.entrees {
+    margin-bottom: 25px;
+}
+
+#uber-eats-logo {
+    -webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));
+    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, .8)) drop-shadow(1px 1px .8px rgba(255, 255, 255, .8));   
+}
+
+/*MODALS*/
+
+.modal-dialog {
+    min-width: 80%;
+}
+
+.modal-images {
+    width: 100%;
+}
+
+.modal-body {
+    height: 600px;
+}
