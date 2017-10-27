@@ -47,12 +47,14 @@ body{
 
 .navbar-link {
     color: rgba(255, 255, 255, .95) !important;
+    font-family: 'Raleway', sans-serif;
 }
 
 .navbar-btn {
     background-color: #7FAD55;
     border-color: #7FAD55;
     color: #FFF8DD;
+    font-family: 'Raleway', sans-serif;
 }
 
 #top-logo-img {
@@ -82,6 +84,12 @@ body{
     align-items: center;
     text-align: center;
     margin: 0;
+
+}
+
+.jumbotron-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;   
 }
 
  /*BODY ITEMS*/
@@ -100,6 +108,11 @@ body{
     background-color: white;
     height: 100%;
     width: 100%;
+}
+
+.thumbnail {
+    /*Removes that little border space around images*/
+    padding: 0;
 }
 
 .display-item {
