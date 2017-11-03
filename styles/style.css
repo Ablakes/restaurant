@@ -30,7 +30,7 @@ header {
 }
 
 .navbar li {
-    font-size: 140%;
+    font-size: 135%;
     padding: 0 4px;
     font-weight: 300;
 }
@@ -66,7 +66,7 @@ header {
     border-color: #95BD70;
     color: white;
     text-shadow: 0px 0px 1px #21978F;
-    font-size: 130%;
+    font-size: 125%;
     margin-top: 5px !important;
 }
 
@@ -104,10 +104,10 @@ header {
     box-shadow: 0px 0px 50px black inset,
                 0px 0px 10px #222222 inset;
     color: white;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
-    		     0px 8px 13px rgba(0,0,0,.4),
-    		     0px 8px 23px rgba(0,0,0,0.2),
-    		     1px 2px 2px rgba(0,0,0,0.8);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.5),
+    		     0px 8px 13px rgba(0,0,0,.7),
+    		     0px 8px 23px rgba(0,0,0,1),
+    		     1px 2px 2px rgba(0,0,0,0.5);
     /*vh probably isn't well supported so needs a change*/
     height: 100%;
     display: flex;
@@ -138,7 +138,9 @@ h1 {
 }
 
 hr {
-    border-color: black;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 /*DELIVERY LOGOS*/
 
