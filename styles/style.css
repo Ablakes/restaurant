@@ -18,10 +18,6 @@ body{
     text-align: center;
 }
 
-header {
-    height: 30%;
-}
-
 .navbar {
     height: 100%;
     border-radius: 0;
@@ -30,8 +26,8 @@ header {
 }
 
 .navbar li {
-    font-size: 135%;
-    padding: 0 4px;
+    font-size: 130%;
+    padding: 0 3.7px;
     font-weight: 300;
 }
 
@@ -45,7 +41,7 @@ header {
 
 .navbar-inverse {
     margin: 0;
-    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+    background: rgba(0,0,0,0);
 }
 
 .nav-container {
@@ -53,7 +49,7 @@ header {
 }
 
 .navbar-link {
-    color: white !important;
+    color: rgba(255, 255, 255, .8) !important;
     text-shadow: 1px 1px 2px #21978F;
 }
 
@@ -76,22 +72,15 @@ header {
     color: white;
 }
 
-#fullsite-top-logo-img {
+#top-logo-img {
     height: 150%;
     width: 180px;
     margin:0;
+    margin-left: 30%;
     /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
     /*filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));*/
     /*-webkit-filter: drop-shadow(0 0 .3px rgba(255, 255, 255, .8)) ;*/
-    filter: drop-shadow(0 0 2px black) drop-shadow(0 0 3px black) drop-shadow(0 0 4px black);
-}
-
-#mobile-top-logo-img {
-    display: none;
-    height: 150%;
-    text-shadow: 2px 2px 2px white;
-    -webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));
-    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));
+    filter: drop-shadow(0 0 2px #111) drop-shadow(0 0 3px #111) drop-shadow(0 0 4px #111);
 }
 
  /*MAIN BANNER*/
@@ -99,22 +88,22 @@ header {
 .jumbotron {
     /*Need to optimize background image for speed*/
     /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
-    background: url("back4.jpg") no-repeat center center fixed;
+    background: linear-gradient(rgba(10,10,10,1), rgba(0, 0, 0,.8) 10%, rgba(0,0,0,0) 27%, rgba(0,0,0,0) 90%, rgba(10,10,10,1)), url("back4.jpg") no-repeat center center fixed;
     background-size: cover;
-    box-shadow: 0px 0px 50px black inset,
-                0px 0px 10px #222222 inset;
+    box-shadow: 0px 0px 50px rgb(10,10,10) inset,
+                0px 0px 10px rgb(10,10,10) inset;
     color: white;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.5),
-    		     0px 8px 13px rgba(0,0,0,.7),
-    		     0px 8px 23px rgba(0,0,0,1),
-    		     1px 2px 2px rgba(0,0,0,0.5);
+    text-shadow: 0px 4px 3px rgba(34,34,34,.5),
+    		     34px 8px 13px rgba(34,34,34,.7),
+    		     34px 8px 23px rgba(34,34,34,1),
+    		     1px 2px 2px rgba(34,34,34,.5);
     /*vh probably isn't well supported so needs a change*/
-    height: 100%;
+    height: 102%;
     display: flex;
     align-items: center;
     text-align: center;
     margin: 0;
-    margin-top: -16%;
+    margin-top: -75px;
 }
 
 h1 {
@@ -221,3 +210,42 @@ hr {
 /*    display: flex;*/
 /*    align-items: center;*/
 /*}*/
+
+
+@media screen and (min-width: 767px){
+    
+}
+
+
+@media screen and (max-width: 900px){
+    .navbar li {
+        padding: 0 2px !important;
+    }
+    .container {
+        width:100%;
+    }
+    .nav-container {
+        width: 100%;
+    }
+    #top-logo-img {
+        margin: 0;
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navbar {
+        background-color: rgb(20,20,20);
+            box-shadow: 0px 0px 5px rgb(20,20,20),
+                        0px 0px 10px rgb(20,20,20),
+                        0px 0px 15px rgb(20,20,20);
+    }
+    .nav-container {
+        margin: 0;
+    }
+    #top-logo-img {
+        margin: 0;
+        height: 130%;
+        width: 160px;
+    }
+}
