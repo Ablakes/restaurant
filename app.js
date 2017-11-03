@@ -7,7 +7,8 @@ app.set("view engine", "ejs");
 app.use("/styles",express.static(__dirname + "/styles"));
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.connect("mongodb://localhost/restaurant", {useMongoClient: true});
-app.use( express.static( "public" ) );
+app.use( express.static('public'));
+app.use(express.static('files'));
 
 var itemSchema = new mongoose.Schema({
    "name": String,

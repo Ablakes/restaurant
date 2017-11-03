@@ -1,6 +1,15 @@
-body{
+html, body {
     height: 100%;
     width: 100%;
+}
+
+body{
+    font-family: 'Crimson Text', serif;
+    background: url("fucked4.png"), url("paper.png");    
+}
+
+.container {
+    width: 90%;
 }
 
 /*NAVBAR*/
@@ -9,25 +18,24 @@ body{
     text-align: center;
 }
 
-.menu-title {
-    text-align: center;
-    padding-top: 0;
+header {
+    height: 30%;
 }
 
 .navbar {
-    height: 8vh;
+    height: 100%;
     border-radius: 0;
     border: 0;
+    
 }
 
 .navbar li {
-    font-size: 130%;
-    margin-top: 4px;
-    font-family: 'Lato', sans-serif !important;
+    font-size: 150%;
+    padding: 0 4px;
 }
 
-.navbar-btn {
-    margin-top: 10px;  
+#my-account  {
+    margin-right: 10px;
 }
 
 .view-button {
@@ -36,29 +44,44 @@ body{
 
 .navbar-inverse {
     margin: 0;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(34,34,34,.85),
-                0px 0px 20px rgba(34,34,34,.85),
-                0px 0px 30px rgba(34,34,34,.85),
-                0px 0px 40px rgba(34,34,34,.85),
-                0px 0px 50px rgba(34,34,34,.85);
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.nav-container {
+    margin-top: 1.4%;
 }
 
 .navbar-link {
-    color: rgba(255, 255, 255, .95) !important;
-    font-family: 'Raleway', sans-serif;
+    color: white !important;
+    text-shadow: 1px 1px 10px #21978F;
+}
+
+.navbar-link:hover {
+    color: #21978F !important;
 }
 
 .navbar-btn {
-    background-color: #7FAD55;
-    border-color: #7FAD55;
+    background-color: #95BD70;
+    border-color: #95BD70;
     color: #FFF8DD;
-    font-family: 'Raleway', sans-serif;
+    font-size: 140%;
+    margin-top: 5px !important;
 }
 
-#top-logo-img {
-    height: 130%;
+#fullsite-top-logo-img {
+    height: 150%;
+    width: 170px;
+    text-shadow: 2px 2px 2px white;
+    margin:0;
+    /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
+    /*filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));*/
+    /*-webkit-filter: drop-shadow(0 0 .3px rgba(255, 255, 255, .8)) ;*/
+    filter: drop-shadow(0 0 .3px grey) ;
+}
+
+#mobile-top-logo-img {
+    display: none;
+    height: 150%;
     text-shadow: 2px 2px 2px white;
     -webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));
     filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));
@@ -69,7 +92,7 @@ body{
 .jumbotron {
     /*Need to optimize background image for speed*/
     /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
-    background: url("background-image-cropped.jpg") no-repeat center center fixed;
+    background: url("back4.jpg") no-repeat center center fixed;
     background-size: cover;
     box-shadow: 0px 0px 50px black inset,
                 0px 0px 10px #222222 inset;
@@ -79,17 +102,37 @@ body{
     		     0px 8px 23px rgba(0,0,0,0.2),
     		     1px 2px 2px rgba(0,0,0,0.8);
     /*vh probably isn't well supported so needs a change*/
-    min-height: 92vh;
+    height: 100%;
     display: flex;
     align-items: center;
     text-align: center;
     margin: 0;
-
+    margin-top: -16%;
 }
 
-.jumbotron-text {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;   
+h1 {
+    font-family: 'Crimson Text', serif !important;
+}
+
+/*MENU TITLE*/
+
+.menu-title {
+    color: white;
+    text-align: center;
+    padding-top: 0;
+}
+
+/*DELIVERY LOGOS*/
+
+#uber-eats-logo {
+    -webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));
+    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, .8)) drop-shadow(1px 1px .8px rgba(255, 255, 255, .8)); 
+    margin-top: 14px;
+    height: 32px;
+}
+
+#doordash-logo {
+    margin-top: 12px;
 }
 
  /*BODY ITEMS*/
@@ -99,15 +142,10 @@ body{
     padding: 30px;
 }
 
-#uber-eats-logo {
-    margin-top: 14px;
-    height: 32px;
-}
-
 .item-containers {
     background-color: white;
-    height: 100%;
-    width: 100%;
+    border: none;
+    border-radius: 3px;
 }
 
 .thumbnail {
@@ -121,12 +159,20 @@ body{
 }
 
 .entrees {
-    margin-bottom: 25px;
+    margin-bottom: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
-#uber-eats-logo {
-    -webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));
-    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, .8)) drop-shadow(1px 1px .8px rgba(255, 255, 255, .8));   
+.caption, .thumbnail {
+    background-color: rgba(0,0,0,0);
+}
+
+.caption h4 {
+    color: black;
+    
+    /*text-shadow: 1px 1px 2px black, 1px 1px 1px black;*/
+    font-size: 1.7em;
 }
 
 /*MODALS*/

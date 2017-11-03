@@ -4,14 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Restaurant</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/styles/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-inverse">
-          <div class="container-fluid">
+          <div class="container-fluid nav-container">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -20,19 +20,20 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand navbar-link" href="/"><img id="top-logo-img" src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/logo.png?7927489112666673891"></a>
+                <!--Make this visable VVVVV-->
+                <a class="navbar-brand navbar-link" href="/"><img id="mobile-top-logo-img" src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/logo.png?7927489112666673891"></a>  
               </div>
           
               <!-- Collect the nav links, forms, and other content for toggling -->
              <div class="container collapsed">
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  
+                <a class="navbar-brand navbar-link navbar-left" href="/"><img id="fullsite-top-logo-img" src="/img/blogo2.png"></a>  
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="https://www.kitava.com/pages/about" class="navbar-link">About</a></li>
                   <li><a href="/items/new" class="navbar-link">New</a></li>
     <!--Learn how to make this scroll down to the menu--> <li><a href="/items" class="navbar-link">Menu</a></li>          
-                  <li class="navbar-link"><a href="https://www.kitava.com/account/login" class="navbar-link">My Account</a></li>
-                  <a href="https://www.grubhub.com/restaurant/kitava-formerly-mealmade-2011-mission-st-san-francisco/354238"><div type="button" class="btn btn-default navbar-btn">Order Now!</div></a>
+                  <li class="navbar-link"><a href="https://www.kitava.com/account/login" class="navbar-link" id="my-account">My Account</a></li>
+                  <a href="https://www.grubhub.com/restaurant/kitava-formerly-mealmade-2011-mission-st-san-francisco/354238"><div type="button" class="btn btn-default btn-md navbar-btn">Order Now!</div></a>
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div>

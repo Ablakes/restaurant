@@ -11,38 +11,35 @@
 
 <!--End jumbotron-->
 
-<div class="container">
+<div class="container main-body-container">
     <div class="row ordering-sites">
         <div class="col-lg-4"><img src="https://uberblogapi.10upcdn.com/wp-content/uploads/2017/09/ubereatslogo2.png" id="uber-eats-logo"></div>
-        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/grubhub.png?944713018036056175"></div>
-        <div class="col-lg-4"><img src="https://cdn.shopify.com/s/files/1/0972/6726/t/19/assets/doordash.png?944713018036056175"></div>
+        <div class="col-lg-4"><img src="/img/grubhub-logo.png"></div>
+        <div class="col-lg-4"><img src="/img/doordash-logo.png" id="doordash-logo"></div>
     </div>
     
 <!--End ordering sites-->
 
-    <hr>
+    <hr class="menu-title-hr">
     <div class="row">
         <div class="col-lg-12 menu-title">
             <h2>Lunch & Dinner Menu</h2>
-            <p>100% free of gluten, dairy, corn, soy, peanuts, refined sugar & seed oils.</p>
+            <h5>100% free of gluten, dairy, corn, soy, peanuts, refined sugar & seed oils.<h5>
         </div>
     </div>
-    <hr>
+    <hr class="menu-title-hr">
     
 <!--Function to create Thumbnails for each item in db-->
     
     <% function makeItemThumbnails(){%>
       <% for(var i = 0; i<items.length; i++){ %>
-        <div class="col-md-3 col-sm-6 entrees">
-          <div class="thumbnail display-item item-containers" data-toggle="modal" data-target="#exampleModalLong<%= i %>">
+        <div class="col-md-4 col-sm-6 entrees">
+          <button class="thumbnail display-item item-containers" data-toggle="modal" data-target="#exampleModalLong<%= i %>">
             <img src=" <%= items[i].image %>">
             <div class="caption">
                 <h4> <%= items[i].name %> </h4>
             </div>
-            <button type="button" class="btn btn-primary view-button" >
-              View
-            </button>
-          </div>  
+          </button>  
         </div>
         <div class="modal fade" id="exampleModalLong<%= i %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -72,9 +69,9 @@
     
     <!--Call function to make items-->
     
-    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
-        <% makeItemThumbnails(); %>
-    </div>
+      <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+          <% makeItemThumbnails(); %>
+      </div>
 </div>
 
 <% include partials/footer %>
