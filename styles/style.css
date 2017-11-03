@@ -4,7 +4,7 @@ html, body {
 }
 
 body{
-    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto', sans-serif;
     background: url("fucked4.png"), url("paper.png");    
 }
 
@@ -30,8 +30,9 @@ header {
 }
 
 .navbar li {
-    font-size: 150%;
+    font-size: 140%;
     padding: 0 4px;
+    font-weight: 300;
 }
 
 #my-account  {
@@ -65,7 +66,7 @@ header {
     border-color: #95BD70;
     color: white;
     text-shadow: 0px 0px 1px #21978F;
-    font-size: 140%;
+    font-size: 130%;
     margin-top: 5px !important;
 }
 
@@ -77,13 +78,12 @@ header {
 
 #fullsite-top-logo-img {
     height: 150%;
-    width: 170px;
-    text-shadow: 2px 2px 2px white;
+    width: 180px;
     margin:0;
     /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
     /*filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));*/
     /*-webkit-filter: drop-shadow(0 0 .3px rgba(255, 255, 255, .8)) ;*/
-    filter: drop-shadow(0 0 5px #21978F);
+    filter: drop-shadow(0 0 2px black) drop-shadow(0 0 3px black) drop-shadow(0 0 4px black);
 }
 
 #mobile-top-logo-img {
@@ -118,7 +118,7 @@ header {
 }
 
 h1 {
-    font-family: 'Crimson Text', serif !important;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 /*MENU TITLE*/
@@ -188,7 +188,6 @@ hr {
 
 .caption h4 {
     color: black;
-    
     /*text-shadow: 1px 1px 2px black, 1px 1px 1px black;*/
     font-size: 1.7em;
 }
