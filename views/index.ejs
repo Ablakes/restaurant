@@ -11,15 +11,20 @@
 
 <!--End jumbotron-->
 
-<div class="container main-body-container">
-    <div class="row ordering-sites">
-        <div class="col-lg-4"><img src="https://uberblogapi.10upcdn.com/wp-content/uploads/2017/09/ubereatslogo2.png" id="uber-eats-logo"></div>
-        <div class="col-lg-4"><img src="/img/grubhub-logo.png"></div>
-        <div class="col-lg-4"><img src="/img/doordash-logo.png" id="doordash-logo"></div>
+
+  <div class="container-fluid ordering-sites-outer">
+    <div class="container ordering-sites-inner">
+      <div class="row ordering-sites">
+          <div class="col-lg-4"><img src="https://uberblogapi.10upcdn.com/wp-content/uploads/2017/09/ubereatslogo2.png" id="uber-eats-logo"></div>
+          <div class="col-lg-4"><img src="/img/grubhub-logo.png"></div>
+          <div class="col-lg-4"><img src="/img/doordash-logo.png" id="doordash-logo"></div>
+      </div>
     </div>
-    
+  </div>
+  
 <!--End ordering sites-->
 
+<div class="container">
     <hr class="menu-title-hr">
     <div class="row">
         <div class="col-lg-12 menu-title">
@@ -73,6 +78,7 @@
           <% makeItemThumbnails(); %>
       </div>
 </div>
+
 
 <% include partials/footer %>
 

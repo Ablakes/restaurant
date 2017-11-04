@@ -63,7 +63,7 @@ body{
     color: white;
     text-shadow: 0px 0px 1px #21978F;
     font-size: 125%;
-    margin-top: 5px !important;
+    margin-top: 6.5px !important;
 }
 
 .navbar-btn:hover {
@@ -80,7 +80,7 @@ body{
     /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
     /*filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));*/
     /*-webkit-filter: drop-shadow(0 0 .3px rgba(255, 255, 255, .8)) ;*/
-    filter: drop-shadow(0 0 2px #111) drop-shadow(0 0 3px #111) drop-shadow(0 0 4px #111);
+    
 }
 
  /*MAIN BANNER*/
@@ -135,7 +135,7 @@ hr {
 
 #uber-eats-logo {
     /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
-    /*filter: drop-shadow(0 0 .8px rgba(255, 255, 255, .8)) drop-shadow(1px 1px .8px rgba(255, 255, 255, .8)); */
+    filter: drop-shadow(0 0 .8px rgba(255, 255, 255, .8)) drop-shadow(1px 1px .8px rgba(255, 255, 255, .8)); 
     margin-top: 14px;
     height: 32px;
 }
@@ -144,12 +144,16 @@ hr {
     margin-top: 12px;
 }
 
- /*BODY ITEMS*/
- 
-.ordering-sites {
+.ordering-sites-outer {
+    background: black;
+}
+
+.ordering-sites-inner {
     text-align: center;
     padding: 30px;
 }
+
+ /*BODY ITEMS*/
 
 .item-containers {
     background-color: white;
@@ -248,4 +252,22 @@ hr {
         height: 130%;
         width: 160px;
     }
+}
+
+
+/*****************
+    NEW PAGE
+******************/
+
+.new-page {
+    background: rgba(0,0,0,.7);
+    height: 100%;
+    margin-top: -75px;
+}
+
+.new-page-title {
+    text-align: center; 
+    margin: 100px 25px 25px 25px;
+    color: rgb(240,240,240);
+    
 }
