@@ -55,6 +55,7 @@ body{
 
 .navbar-link:hover {
     color: #21978F !important;
+    text-shadow: none;
 }
 
 .navbar-btn {
@@ -69,7 +70,8 @@ body{
 .navbar-btn:hover {
     background-color: #21978F;
     border-color: #21978F;
-    color: white;
+    color: black;
+    text-shadow: 0px 0px 2px white;
 }
 
 #top-logo-img {
