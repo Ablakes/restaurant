@@ -81,7 +81,7 @@ body{
     margin-left: 30%;
     /*-webkit-filter: drop-shadow(1px 1px .7px rgba(255, 255, 255, .5)) drop-shadow(-1px -1px .7px rgba(255, 255, 255, .5));*/
     /*filter: drop-shadow(0 0 .8px rgba(255, 255, 255, 1)) drop-shadow(1px 1px .8px rgba(255, 255, 255, 1));*/
-    filter: drop-shadow(0 0 .3px rgba(255, 255, 255, .5)) drop-shadow(0 0 10px rgba(20,20,20,1));
+    
 }
 
  /*MAIN BANNER*/
@@ -89,7 +89,7 @@ body{
 .jumbotron {
     /*Need to optimize background image for speed*/
     /*VVV Need to figure out how to link from images folder correctly using app.js VVV*/
-    background: linear-gradient(rgba(20,20,20,.6), rgba(20,20,20,.3) 8%, rgba(20,20,20,0.05) 15%, rgba(20,20,20,0.02) 20%, rgba(20,20,20,0.01) 98%, rgba(255,255,255,0) 99%, rgba(255,255,255,1)), url("background-new.png") no-repeat center center fixed;
+    background: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.4) 8%, rgba(255,255,255,0.2) 15%, rgba(255,255,255,0.1) 20%, rgba(255,255,255,0.05) 98%, rgba(255,255,255,0) 99%, rgba(255,255,255,1)), url("background-new.png") no-repeat center center fixed;
     background-size: cover;
     /*box-shadow: 0px 0px 50px rgb(10,10,10) inset,*/
     /*            0px 0px 10px rgb(10,10,10) inset;*/
