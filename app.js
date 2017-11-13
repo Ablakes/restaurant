@@ -65,13 +65,23 @@ app.post("/items", function(req, res){
 
 // SHOW
 app.get("/items/:id", function(req, res){
-   Item.findById(req.params.id, function(err, foundItem){
-       if(err){
-          console.log(err)
-       }else{
-           res.render("show", {item:foundItem});
-       }
-   });
+    res.send("hey");
+//   Item.findById(req.params.id, function(err, foundItem){
+//       if(err){
+//           console.log(err)
+//       }else{
+//           res.render("show", {item:foundItem});
+//       }
+//   });
+});
+
+app.get("/pizza", function(req, res){
+    res.send('hello');
+});
+
+// EDIT ROUTE
+app.get("/items/this", function(req, res){
+    res.send("hey bitch");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){
